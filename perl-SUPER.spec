@@ -16,19 +16,19 @@ BuildRequires:	perl-devel
 Perl module for controlling superclass method dispatch
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{modver}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+perl Makefile.PL INSTALLDIRS=vendor
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc README Changes
 %{perl_vendorlib}/SUPER.pm
-%{_mandir}/man3*/*
+%doc %{_mandir}/man3*/*
