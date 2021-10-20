@@ -11,6 +11,7 @@ Url:		http://metacpan.org/pod/SUPER
 Source0:	http://search.cpan.org/CPAN/authors/id/C/CH/CHROMATIC/SUPER-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
+BuildRequires:	perl(Test::More)
 
 %description
 Perl module for controlling superclass method dispatch
