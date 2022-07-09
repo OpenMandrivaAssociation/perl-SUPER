@@ -12,6 +12,7 @@ Source0:	http://search.cpan.org/CPAN/authors/id/C/CH/CHROMATIC/SUPER-%{modver}.t
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
+BuildRequires:	perl(Sub::Identify)
 
 %description
 Perl module for controlling superclass method dispatch
