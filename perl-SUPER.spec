@@ -1,10 +1,10 @@
 %define	modname	SUPER
-%define	modver	1.20141117
+%define	modver	1.20190531
 
 Summary:	Perl module for controlling superclass method dispatch
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	1
 Group:		Development/Perl
 License:	GPLv2+ or Artistic
 Url:		http://metacpan.org/pod/SUPER
