@@ -1,14 +1,13 @@
 %define	modname	SUPER
-%define	modver	1.20190531
 
 Summary:	Perl module for controlling superclass method dispatch
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	3
+Version:	1.20190531
+Release:	1
 Group:		Development/Perl
 License:	GPLv2+ or Artistic
 Url:		https://metacpan.org/pod/SUPER
-Source0:	http://search.cpan.org/CPAN/authors/id/C/CH/CHROMATIC/SUPER-%{modver}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/C/CH/CHROMATIC/SUPER-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
@@ -18,7 +17,7 @@ BuildRequires:	perl(Sub::Identify)
 Perl module for controlling superclass method dispatch
 
 %prep
-%autosetup -p1 -n %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
