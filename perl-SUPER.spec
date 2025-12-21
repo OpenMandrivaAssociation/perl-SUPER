@@ -9,6 +9,7 @@ License:	GPLv2+ or Artistic
 Url:		https://metacpan.org/pod/SUPER
 Source0:	http://search.cpan.org/CPAN/authors/id/C/CH/CHROMATIC/SUPER-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Sub::Identify)
